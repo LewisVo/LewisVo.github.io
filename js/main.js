@@ -97,15 +97,15 @@
       _v.previewScale = (windowW - _v.previewMargin*2)/_preW;
     }
 
-    if (windowW > screenBreak) {
+    /*if (windowW > screenBreak) {*/
       offsetAmount = _v.previewMargin*2 + _v.previewWidth*_v.previewScale;
       configOffset = `0 0 0 ${offsetAmount}px`;
       _v.isSmallScreen = false;
-    } else {
+    /*} else {
       offsetAmount = _v.previewMargin*4 + _v.previewHeight*_v.previewScale;
       configOffset = `${offsetAmount}px 0 0 0`;
       _v.isSmallScreen = true;
-    }
+    }*/
     _v.configOffset = configOffset;
   };
   let setPreviewSize = function(_v) {
